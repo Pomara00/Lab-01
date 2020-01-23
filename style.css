@@ -1,0 +1,52 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9fafc;
+}
+
+nav {
+    text-align: left;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+a {
+    color: #69696a;
+    text-align: left;
+    border-left: 3px #69696a;
+    text-decoration: none;
+    align-content: flex-start;
+}
+
+
+.button {
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #FFF;
+    border-radius: 45px;
+    font-size: 13.4px;
+
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 13.4px;
+
+}
+
+h1 {
+    margin: 0px;
+    font-size: 18px;
+}
+
+p {
+    color: #69696a;
+    font-size: 10.9px;
+    margin-left: 0px;
+    border-left-style: solid;
+    border-left-color: #69696a;
+}
