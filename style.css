@@ -3,50 +3,121 @@ body {
     background-color: #f9fafc;
 }
 
-nav {
-    text-align: left;
-    margin-bottom: 2px;
-    text-decoration: none;
+h1 {
+    font-size: 18px;
 }
 
-a {
-    color: #69696a;
-    text-align: left;
-    border-left: 3px #69696a;
-    text-decoration: none;
-    align-content: flex-start;
-}
-
-
-.button {
-    background-color: #000;
-    text-align: center;
-    width: 100%;
-    display: block;
-    color: #FFF;
-    border-radius: 45px;
-    font-size: 13.4px;
-
+header {
+    font-size: 18px;
+    border-left: 5px;
 }
 
 ul {
     padding: 0px;
-    list-style: none;
-    margin: 0px;
-    text-decoration: none;
-    font-size: 13.4px;
-
 }
 
-h1 {
-    margin: 0px;
-    font-size: 18px;
+li {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 0%;
+    color: #69696a;
 }
 
 p {
     color: #69696a;
-    font-size: 10.9px;
-    margin-left: 0px;
-    border-left-style: solid;
-    border-left-color: #69696a;
+}
+
+.button {
+    background-color: #000;
+    border: none;
+    color: #f9fafc;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 28px;
+    display: block;
+}
+
+.line {
+    border-left: thick solid #69696a;
+    padding: 10px;
+    margin: 22px 2px;
+}
+
+@media only screen and (min-width:768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    h1 {
+        margin: 0px;
+        font-size: 18px;
+    }
+
+    li {
+        margin-top: 13px;
+        margin-right: 15px;
+    }
+
+    .line {
+        width: 50%;
+    }
+
+    .scroll {
+        position: fixed;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%);
+    }
+
+    .circle {
+        position: relative;
+    }
+
+    .x {
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 130px;
+        height: 130px;
+        opacity: .8;
+        position: absolute;
+        border-radius: 300%;
+        transform: translatex(-50%);
+        right: 90px;
+        top: -100px
+    }
+
+    .y {
+        background-color: rgba(247, 193, 162, 0.7);
+        width: 100px;
+        height: 100px;
+        opacity: .8;
+        position: absolute;
+        border-radius: 600%;
+        right: 100px;
+        top: -20px
+    }
+
+    .z {
+        background-color: rgba(207, 130, 213, 0.6);
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        border-radius: 600%;
+        opacity: .8;
+        right: 110px;
+        top: -80px;
+    }
 }
